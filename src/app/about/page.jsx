@@ -3,6 +3,11 @@ import styels from "./page.module.css";
 import Image from 'next/image';
 import Button from '@/component/Button/Button';
 
+export const metadata = {
+    title: 'About',
+    description: 'From About Page',
+  }
+
 const About = () => {
     return (
         <div className={styels.container}>

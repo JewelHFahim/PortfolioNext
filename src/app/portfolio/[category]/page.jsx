@@ -40,9 +40,6 @@ const Category = ({ params }) => {
         ))
       }
 
-
-
-
     </div>
   )
 }

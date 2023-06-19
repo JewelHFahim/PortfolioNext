@@ -2,14 +2,20 @@ import React from 'react';
 import styles from "./page.module.css";
 import Link from 'next/link';
 
+export const metadata = {
+    title: 'Portfolio',
+    description: 'From Portfolio Page',
+}
+
+
 const Portfolio = () => {
     return (
         <div className={styles.container}>
             <h1 className={styles.selectTitle}>Choose a gallery</h1>
             <div className={styles.items}>
-                <Link href="/portfolio/illustration" className={styles.item}>
+                <Link href="/portfolio/illustraions" className={styles.item}>
                     <span className={styles.title}>Illustrations</span>
-                </Link> 
+                </Link>
                 <Link href="/portfolio/websites" className={styles.item}>
                     <span className={styles.title}>Websites</span>
                 </Link>
