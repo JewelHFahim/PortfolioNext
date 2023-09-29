@@ -1,26 +1,39 @@
 .container {
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
 }
 
 .logo {
-    font-weight: bold;
-    font-style: 22px;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.logo:hover {
+  color: #53c28b;
+}
+
+.fahim {
+  font-weight: 600;
+  color: #53c28b;
 }
 
 .links {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menus:hover {
+  color: #53c28b;
 }
 
 .logout {
-    padding: 5px;
-    border: none;
-    background-color: #53c28b;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 3px;
+  padding: 5px;
+  border: none;
+  background-color: #53c28b;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
 }

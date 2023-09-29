@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <div className={styles.container}>
-            <div>@ FireCutter. All rights reserved.</div>
+            <div> JHF © All rights reserved.</div>
 
             <div className={styles.social}>
                 <Image src="/Assets/1.png" width={15} height={15} className={styles.icon} alt='vsb'/>

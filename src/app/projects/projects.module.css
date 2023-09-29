@@ -1,11 +1,13 @@
 .mainTitle {
-    font-size: 100px;
+    font-size: 60px;
     font-weight: 600;
+    text-transform: uppercase;   
 }
 
 .selectTitle {
     margin: 20px 0px;
-    font-size: 30px;
+    font-size: 26px;
+    color: #53C28B;
     font-weight: 500;
 }
 
@@ -21,6 +23,7 @@
     height: 400px;
     position: relative;
     background-size: cover !important;
+    background-repeat: no-repeat;
 }
 
 .item:hover .title{
@@ -28,7 +31,7 @@
 }
 
 .item:nth-child(1) {
-    background: url("/assets/illustration.png");
+    background: url("/assets/SpaGreen.png");
 }
 .item:nth-child(2) {
     background: url("/assets/websites.jpg");
