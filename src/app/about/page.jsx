@@ -52,7 +52,7 @@ const About = () => {
           />
           <div className={styels.imgText}>
             <h1 className={styels.imgTitle}>Jewel Hossain Fahim</h1>
-            <h2 className={styels.imgDesc}>Fronend Developer</h2>
+            <h2 className={styels.imgDesc}>Frontend Developer</h2>
           </div>
         </div>
 
