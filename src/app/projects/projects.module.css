@@ -1,5 +1,9 @@
+.container{
+    padding-bottom: 20px;
+}
+
 .mainTitle {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 600;
     text-transform: uppercase;   
 }
@@ -11,9 +15,11 @@
     font-weight: 500;
 }
 
+
 .items {
-    display: flex;
-    gap: 50px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .item {
@@ -46,4 +52,39 @@
     bottom: 10px;
     font-size: 40px;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .items {
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+        margin: 0px auto;
+    }
+
+    .mainTitle {
+        font-size: 30px;
+    }
+
+    .selectTitle {
+        margin: 10px 0px;
+        font-size: 20px;
+    }
+
+    .item {
+        width: 250px;
+        height: 300px;
+    }
+
+    .title {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+
+
+
+
 }

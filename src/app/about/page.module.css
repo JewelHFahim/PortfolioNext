@@ -1,50 +1,144 @@
-.container{
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
 
+.imgConatainer {
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+
+.img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 3px;
+  /* filter: grayscale(100); */
+}
+
+/* .img:hover{
+    filter: grayscale(0);
+
+} */
+
+.imgText {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: #53c28b;
+  padding: 5px;
+  color: white;
+  border-radius: 3px;
+}
+
+.imgTitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.textContainer {
+  display: flex;
+  gap: 100px;
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.desc {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.collaborate {
+  color: #53c28b;
+}
+
+/********************* TECHNOLOGIES ******************/
+.technology {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.technology p {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  min-width: 100px;
+}
+
+.techItems {
+  display: grid;
+  grid-template-columns: repeat(4, 14fr);
+  margin-bottom: 20px;
+  width: 80%;
 }
 
 
-.imgConatainer{
-    width: 100%;
-    height: 300px;
-    position: relative;
-}
-
-.img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    filter: grayscale(100);
-}
-
-.imgText{
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: #53C28b;
-    padding: 5px;
-    color: white;
-}
-
-.imgTitle{
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.textContainer{
-    display: flex;
-    gap: 100px;
-}
-
-.item{
-    flex: 1;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
+@media only screen and (max-width: 600px){
+  .container {
+    flex-direction: column-reverse;
     gap: 30px;
+  }
+  
+  .imgConatainer {
+    height: 300px;
+  }
+  
+  .img {
+    height: 300px;
+  }
+
+.imgTitle {
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.desc{
-    font-size: 18px;
-    font-weight: 300;
-    text-align: justify;
+.textContainer {
+  gap: 10px;
+}
+
+.item {
+  gap: 15px;
+}
+
+.desc {
+  font-size: 15px;
+  text-align: center;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.technology{
+  margin: 10px 0px;
+}
+
+.technology p {
+  font-size: 20px;
+}
+
+.techItems {
+  row-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  font-size: 12px;
+}
 }

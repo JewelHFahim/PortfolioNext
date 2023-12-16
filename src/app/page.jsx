@@ -2,6 +2,7 @@ import Button from "@/component/Button/Button";
 import styles from "./page.module.css";
 import Image from "next/image";
 import Hero from "public/assets/hero.png";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,10 +11,16 @@ export default function Home() {
         <h1 className={styles.title}>
           Better design for your digital products
         </h1>
+
         <p className={styles.desc}>
           Turing your Idea into Reality. We bring together global tech Industry
         </p>
-        <Button url="/portfolio" text="See Our Works" />
+
+        <Link href="/projects">
+          <div className="w-full flex justify-center lg:justify-start">
+            <button className={styles.projectBtn}>Explore Projects</button>
+          </div>
+        </Link>
       </div>
 
       <div className={styles.item}>

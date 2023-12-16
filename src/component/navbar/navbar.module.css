@@ -3,11 +3,20 @@
   justify-content: space-between;
   height: 100px;
   align-items: center;
+  border-bottom: 1px solid rgb(42, 41, 41);
 }
 
 .logo {
+  width: 80px;
   font-size: 24px;
   font-weight: 200;
+  background: linear-gradient(to left, #194C33, #bbb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo2 {
+  display: none;
 }
 
 .logo:hover {
@@ -16,7 +25,7 @@
 
 .fahim {
   font-weight: 600;
-  color: #53c28b;
+  /* color: #53c28b; */
 }
 
 .links {
@@ -36,4 +45,41 @@
   color: #fff;
   cursor: pointer;
   border-radius: 3px;
+}
+
+.mobileMenuBtn {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 60px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo2 {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    background: linear-gradient(to left, #194C33 30%, #bbb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .logo2 span {
+    font-weight: 700;
+  }
+
+  .mobileMenuBtn{
+    display: block;
+  }
+
+  
 }

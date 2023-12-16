@@ -7,10 +7,15 @@ export const metadata = {
 };
 
 const Projects = () => {
+  
   return (
     <div className={styles.container}>
+
       <h1 className={styles.mainTitle}>Projects</h1>
-      <h1 className={styles.selectTitle}>Something I&apos;ve Built</h1>
+
+      {/* Frontend Projects */}
+      <h1 className={styles.selectTitle}>- Frontend</h1>
+
       <div className={styles.items}>
         <Link href="https://spagreen.netlify.app/" className={styles.item}>
           <span className={styles.title}>SpaGreen</span>
@@ -22,6 +27,7 @@ const Projects = () => {
           <span className={styles.title}>Applications</span>
         </Link>
       </div>
+
     </div>
   );
 };
