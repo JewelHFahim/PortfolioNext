@@ -17,12 +17,14 @@ const Projects = () => {
       <h1 className={styles.selectTitle}>- Frontend</h1>
 
       <div className={styles.items}>
-        <Link href="https://spagreen.netlify.app/" className={styles.item}>
+        <Link href="https://spagreen.netlify.app/" target="_blank" className={styles.item}>
           <span className={styles.title}>SpaGreen</span>
         </Link>
-        <Link href="/portfolio/websites" className={styles.item}>
-          <span className={styles.title}>Websites</span>
+
+        <Link href="https://nature-hub.netlify.app/" target="_blank" className={styles.item}>
+          <span className={styles.title}>Nature Hub</span>
         </Link>
+
         <Link href="/portfolio/applications" className={styles.item}>
           <span className={styles.title}>Applications</span>
         </Link>
