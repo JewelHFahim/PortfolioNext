@@ -36,14 +36,18 @@
 }
 
 .item:nth-child(1) {
+  background: url("/assets/epicmovies.png");
+}
+
+.item:nth-child(2) {
   background: url("/assets/SpaGreen.png");
 }
-.item:nth-child(2) {
+
+.item:nth-child(3) {
   background: url("/assets/Rural-Honey-min.png");
 }
-.item:nth-child(3) {
-  background: url("/assets/apps.jpg");
-}
+
+
 
 .title {
   position: absolute;
